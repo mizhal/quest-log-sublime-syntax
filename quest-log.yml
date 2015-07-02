@@ -1,0 +1,23 @@
+---
+name: QuestLog
+scopeName: source.syntax_name
+fileTypes: ["qlog"]
+uuid: 9ec7292a-c4a3-426c-9d24-4a39149e3c15
+
+patterns:
+  - match: "^\\s*\\[TODO\\]"
+    name: entity.name.function.todo-tag
+    comments: "Todo tag"
+  - match: "^\\s*\\[DONE\\]"
+    name: string.done-tag
+    comments: "Done tag"
+  - match: "^\\s*Q[#][0-9]+.*$"
+    name: support.function.quest-tag
+    comments: "Quest tag" 
+  - match: "^\\s*[A-Z]+:"
+    name: keyword.other.section-tag
+    comments: "Section tag"
+  - match: "^=[A-Z]+=+"
+    name: invalid.state-tag
+    comments: "State tag" 
+...
