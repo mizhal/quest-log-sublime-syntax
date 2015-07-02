@@ -10,7 +10,7 @@ patterns:
     name: entity.name.function.todo-tag
     comments: "Todo tag"
   - match: "^\\s*\\[DONE\\]"
-    name: string.done-tag
+    name: keyword.done-tag
   - match: "^\\s*\\[NEXT\\]"
     name: invalid.next-tag
     comments: "Next tag"
@@ -21,7 +21,7 @@ patterns:
     name: support.function.quest-tag
     comments: "Quest tag" 
   - match: "^\\s*[A-Z]+:"
-    name: keyword.other.section-tag
+    name: string.section-tag
     comments: "Section tag"
   - match: "^=[A-Z]+=+"
     name: invalid.state-tag
