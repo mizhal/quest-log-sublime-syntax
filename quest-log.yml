@@ -1,3 +1,4 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
 ---
 name: QuestLog
 scopeName: source.syntax_name
@@ -10,7 +11,12 @@ patterns:
     comments: "Todo tag"
   - match: "^\\s*\\[DONE\\]"
     name: string.done-tag
-    comments: "Done tag"
+  - match: "^\\s*\\[NEXT\\]"
+    name: invalid.next-tag
+    comments: "Next tag"
+  - match: "^\\s*\\[FOCUS\\]"
+    name: invalid.focus-tag
+    comments: "Focus tag"
   - match: "^\\s*Q[#][0-9]+.*$"
     name: support.function.quest-tag
     comments: "Quest tag" 
